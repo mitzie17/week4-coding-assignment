@@ -91,11 +91,71 @@ console.log('8. fullName function returns ' + fullName('Mitzi', 'Estrada'))
 
 // 9. Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 
+function isGreaterThan100(array) {
+    let sumTotal = 0;
+    for (i = 0; i < array.length; i++) {
+        sumTotal += array[i]
+    }
+    if (sumTotal > 100) {
+        return true
+    }
+        return sumTotal
+}
+
+console.log('9. ' + isGreaterThan100(ages))
+
 // 10. Write a function that takes an array of numbers and returns the average of all the elements in the array.
 
+function averageOfElements(array) {
+    let sumOfElements = 0;
+    for (i = 0; i < array.length; i++) {
+        sumOfElements += array[i]
+    }
+    let avgOfElements = sumOfElements / array.length
+    return avgOfElements
+}
+
+console.log('10. ' + averageOfElements(ages))
+
 // 11. Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+let ages2 = [30, 20, 7, 25, 55]
+
+function isFirstArrayAvgGreater (arr1, arr2) {
+    let arr1Sum = 0;
+    let arr2Sum = 0;
+    for (i = 0; i < arr1.length; i++) {
+        arr1Sum += arr1[i]
+    }
+    for (i = 0; i < arr2.length; i++) {
+        arr2Sum += arr2[i]
+    }
+
+    let arr1Average = arr1Sum / arr1.length
+    let arr2Average = arr2Sum / arr2.length
+
+    if (arr1Average > arr2Average) {
+        return true
+    } else {
+        return false
+    }
+}
+
+// Created another ages array (ages2) to compare its average with the first ages array to see if function worked.
+console.log('11. ' + isFirstArrayAvgGreater(ages, ages2))
 
 // 12. Write a function call willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if is hot outside
 // and if moneyInPocket is greater than 10.50.
+let isHotOutside = true;
+let moneyInPocket = 9;
+
+function willBuyDrink(isHotOutside, moneyInPocket) {
+    if (isHotOutside == true && moneyInPocket > 10.5) {
+        return true
+    }
+    return false
+}
+console.log('12. ' + willBuyDrink(isHotOutside, moneyInPocket))
 
 // 13. Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
+
+
