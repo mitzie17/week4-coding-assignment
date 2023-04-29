@@ -45,9 +45,21 @@ for (name of names) {
 console.log('2b. ' + allNames)
 
 // 3. How do you access the last element of any array?
+// To access the last element of an array, you can call the lenght property on the array and subtract one.
+// The length property will return the number of items in the array but because arrays are zero-indexed, that is the first index in the array is zero,
+// we would need to subtract one to get the last item/element.
+ console.log('To access the last element of ages array: ages[ages.length - 1]')
 
 //  4. How do you access the first element of any array?
+// To access the first element of an array we need to type the first index number of the array inside the brackets, which is always zero.
+console.log('To access the first element of the ages array: ages[0]')
 
-//
+// 5. Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
+let nameLengths = []
+for (name of names) {
+    nameLengths.push(name.length)
+}
+console.log(`New array with the length of each name: ${nameLengths}`)
+
 
 
