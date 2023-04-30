@@ -200,5 +200,6 @@ function removeDuplicates(arr) {
     } )
     return uniqueNumbers
 }
-console.log(removeDuplicates(arrayOfNumbers))
+console.log('13. Original array with duplicates: ' + arrayOfNumbers)
+console.log('New array without duplicates: ' + removeDuplicates(arrayOfNumbers))
 
